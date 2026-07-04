@@ -10,6 +10,7 @@ import {
   FaArrowDown,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -138,11 +139,13 @@ export default function Hero() {
 
       </div>
 
+<Link href="#about">
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 p-3 rounded-full border border-cyan-400 text-cyan-400 text-3xl cursor-pointer transition-all duration-300 hover:bg-cyan-400 hover:text-[#050816] hover:scale-110 animate-bounce"
+>
+    <FaArrowDown />
+  </div>
+</Link>
     
-
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-cyan-400 text-3xl">
-        <FaArrowDown />
-      </div>
     </section>
   );
 }
