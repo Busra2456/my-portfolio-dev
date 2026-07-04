@@ -3,35 +3,35 @@ import Link from "next/link";
 const Navbar = () => {
   const navItems = [
     {
-      title: "Hero",
-      path: "/",
+      title: "Home",
+      path: "#Home",
     },
     {
       title: "About",
-      path: "/about",
+      path: "#About",
     },
     {
       title: "Skills",
-      path: "/skills",
+      path: "#Skills",
     },
     {
       title: "Projects",
-      path: "/projects",
+      path: "#projects",
     },
     {
       title: "Contact",
-      path: "/contact",
+      path: "#Contact",
     },
      {
       title: "Footer",
-      path: "/footer",
+      path: "#Footer",
      }
     
   ];
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-10 navbar fixed z-10 bg-opacity-60 bg-black/65 text-white shadow-sm py-4">
-      <div className="navbar max-w-7xl mx-auto px-6 text-black">
+    <div className="fixed top-0 left-0 right-0 z-10 py-4 text-white shadow-sm navbar bg-opacity-60 bg-black/65">
+      <div className="px-6 mx-auto text-black navbar max-w-7xl">
        
         <div className="navbar-start">
          
@@ -39,7 +39,7 @@ const Navbar = () => {
             <div tabIndex={0} role="button" className="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-white"
+                className="w-6 h-6 text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -55,11 +55,11 @@ const Navbar = () => {
 
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content flex items-center gap-8 mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
+              className="flex items-center gap-8 p-2 mt-3 shadow menu menu-sm dropdown-content w-52 rounded-box bg-base-100"
             >
               {navItems.map((item) => (
                 <li key={item.path}>
-                  <Link className="hover:text-cyan-400 duration-300 font-medium"
+                  <Link className="font-medium duration-300 hover:text-cyan-400"
                    href={item.path}>{item.title}</Link>
                 </li>
               ))}
@@ -72,13 +72,13 @@ const Navbar = () => {
         </div>
 
         
-        <div className="navbar-center hidden lg:flex ">
-          <ul className="menu menu-horizontal flex items-center gap-5">
+        <div className="hidden navbar-center lg:flex ">
+          <ul className="flex items-center gap-5 menu menu-horizontal">
             {navItems.map((item) => (
               <li key={item.path}>
                 <Link
                   href={item.path}
-                  className="text-white hover:text-cyan-400 transition  duration-300 font-medium"
+                  className="font-medium text-white transition duration-300 hover:text-cyan-400"
                 >
                   {item.title}
                 </Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
 
         
         <div className="navbar-end">
-          <button className="hidden md:block bg-cyan-500 hover:bg-cyan-600 px-5 py-2 rounded-lg font-medium duration-300">
+          <button className="hidden px-5 py-2 font-medium duration-300 rounded-lg md:block bg-cyan-500 hover:bg-cyan-600">
           Resume
         </button>
         </div>

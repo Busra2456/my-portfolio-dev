@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <section
-      id="about"
+      id="About"
       className="bg-[#0B1120] text-white py-24 px-6"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto max-w-7xl">
 
         <motion.div
           initial={{ opacity: 0, y: 70 }}
@@ -16,16 +16,16 @@ export default function About() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-center mb-4">
+          <h2 className="mb-4 text-4xl font-bold text-center">
             About <span className="text-cyan-400">Me</span>
           </h2>
 
-          <p className="text-center text-gray-400 max-w-3xl mx-auto mb-16">
+          <p className="max-w-3xl mx-auto mb-16 text-center text-gray-400">
             Get to know more about me, my journey, and the technologies I enjoy working with.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
 
           {/* Left Side */}
 
@@ -35,21 +35,21 @@ export default function About() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-bold mb-6">
+            <h3 className="mb-6 text-3xl font-bold">
               Who am I?
             </h3>
 
-            <p className="text-gray-400 leading-8 mb-6">
-              I'm <span className="text-cyan-400 font-semibold">Busra</span>, a passionate Full Stack Developer
+            <p className="mb-6 leading-8 text-gray-400">
+              I'm <span className="font-semibold text-cyan-400">Busra</span>, a passionate Full Stack Developer
               who enjoys building modern and scalable web applications.
             </p>
 
-            <p className="text-gray-400 leading-8 mb-6">
+            <p className="mb-6 leading-8 text-gray-400">
               I have experience with React, Next.js, Node.js, Express.js,
               Prisma ORM, PostgreSQL, MongoDB and JWT Authentication.
             </p>
 
-            <p className="text-gray-400 leading-8">
+            <p className="leading-8 text-gray-400">
               My goal is to become a professional software engineer by
               continuously improving my skills and building impactful projects.
             </p>

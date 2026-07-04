@@ -14,7 +14,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden min-h-screen bg-[#050816] text-white flex items-center"
+    <section id="Home" className="relative overflow-hidden min-h-screen bg-[#050816] text-white flex items-center"
     >
    
 
@@ -22,9 +22,9 @@ export default function Hero() {
 
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-600/20 blur-[180px] rounded-full"></div>
 
-      <div className="max-w-7xl mx-auto px-6 py-24 w-full">
+      <div className="w-full px-6 py-24 mx-auto max-w-7xl">
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid items-center gap-16 lg:grid-cols-2">
 
           
 
@@ -33,15 +33,15 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <p className="text-cyan-400 text-xl mb-4 font-medium">
+            <p className="mb-4 text-xl font-medium text-cyan-400">
                Hello, I'm
             </p>
 
-            <h1 className="text-5xl md:text-7xl font-extrabold mb-5">
+            <h1 className="mb-5 text-5xl font-extrabold md:text-7xl">
               Busra
             </h1>
 
-            <h2 className="text-2xl md:text-4xl font-bold text-cyan-400 mb-6">
+            <h2 className="mb-6 text-2xl font-bold md:text-4xl text-cyan-400">
               <Typewriter
                 words={[
                   "Full Stack Developer",
@@ -58,7 +58,7 @@ export default function Hero() {
               />
             </h2>
 
-            <p className="text-gray-400 text-lg leading-8 max-w-xl mb-10">
+            <p className="max-w-xl mb-10 text-lg leading-8 text-gray-400">
               Passionate Full Stack Developer with experience in React,
               Next.js, Node.js, Express.js, Prisma and PostgreSQL.
               I enjoy building clean, scalable and modern web applications.
@@ -68,11 +68,11 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-5 mb-10">
 
-              <button className="bg-gradient-to-r from-cyan-500 to-blue-600 px-7 py-3 rounded-xl font-semibold hover:scale-105 duration-300">
+              <button className="py-3 font-semibold duration-300 bg-gradient-to-r from-cyan-500 to-blue-600 px-7 rounded-xl hover:scale-105">
                 View Projects
               </button>
 
-              <button className="border border-cyan-500 px-7 py-3 rounded-xl font-semibold hover:bg-cyan-500 hover:scale-105 duration-300">
+              <button className="py-3 font-semibold duration-300 border border-cyan-500 px-7 rounded-xl hover:bg-cyan-500 hover:scale-105">
                 Download Resume
               </button>
 
@@ -85,7 +85,7 @@ export default function Hero() {
     target="_blank"
     rel="noopener noreferrer"
   >
-    <FaGithub className="hover:text-cyan-400 hover:scale-125 duration-300" />
+    <FaGithub className="duration-300 hover:text-cyan-400 hover:scale-125" />
   </a>
 
   <a
@@ -93,7 +93,7 @@ export default function Hero() {
     target="_blank"
     rel="noopener noreferrer"
   >
-    <FaLinkedin className="hover:text-cyan-400 hover:scale-125 duration-300" />
+    <FaLinkedin className="duration-300 hover:text-cyan-400 hover:scale-125" />
   </a>
 
   <a
@@ -101,11 +101,11 @@ export default function Hero() {
     target="_blank"
     rel="noopener noreferrer"
   >
-    <FaFacebook className="hover:text-cyan-400 hover:scale-125 duration-300" />
+    <FaFacebook className="duration-300 hover:text-cyan-400 hover:scale-125" />
   </a>
 
   <a href="mailto:maisaraisa938@gmail.com">
-    <HiOutlineMail className="hover:text-cyan-400 hover:scale-125 duration-300" />
+    <HiOutlineMail className="duration-300 hover:text-cyan-400 hover:scale-125" />
   </a>
 </div>
 
@@ -139,7 +139,7 @@ export default function Hero() {
 
       </div>
 
-<Link href="#about">
+<Link href="#About">
   <div className="absolute bottom-8 left-1/2 -translate-x-1/2 p-3 rounded-full border border-cyan-400 text-cyan-400 text-3xl cursor-pointer transition-all duration-300 hover:bg-cyan-400 hover:text-[#050816] hover:scale-110 animate-bounce"
 >
     <FaArrowDown />
