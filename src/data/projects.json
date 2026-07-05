@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Prisma Press Backend",
+    "image": "/images/project1.jpg",
+    "description": "A REST API built with Node.js, Express.js, Prisma ORM, PostgreSQL, JWT Authentication, and Role-Based Authorization for managing blogs and users.",
+    "technologies": [
+      "Node.js",
+      "Express.js",
+      "Prisma",
+      "PostgreSQL",
+      "JWT"
+    ],
+    "github": "https://github.com/Busra2456/prisma-press-backend",
+    "live": "#"
+  },
+  {
+    "id": 2,
+    "title": "Pet Haven",
+    "image": "/images/project2.png",
+    "description": "A full-stack pet adoption platform with user authentication, pet management, responsive design, and Firebase deployment.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Firebase",
+      "Tailwind CSS"
+    ],
+    "github": "https://github.com/Busra2456/pet-haven-client",
+    "live": "https://pet-haven1.web.app"
+  },
+  {
+    "id": 3,
+    "title": "Portfolio Website",
+    "image": "/images/project3.jpg",
+    "description": "A modern and responsive personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion to showcase my skills and projects.",
+    "technologies": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "github": "https://github.com/Busra2456/my-portfolio-dev",
+    "live": "#"
+  }
+]
