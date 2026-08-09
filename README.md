@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💼 My Portfolio
 
-## Getting Started
+A modern, responsive, and user-friendly developer portfolio built with **Next.js**.  
+This portfolio showcases my skills, projects, experience, and journey as a Full Stack Web Developer.
 
-First, run the development server:
+## 🌐 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔗 **Live Website:https://my-portfolio-dev-drho.vercel.app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📂 Repository
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🔗 **GitHub:** https://github.com/Busra2456/my-portfolio-dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## About Me
 
-To learn more about Next.js, take a look at the following resources:
+Hi, I'm **Hasna Hena Busra** 👋
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I'm a passionate **Full Stack Web Developer** who enjoys building modern, responsive, and user-friendly web applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+I love turning ideas and designs into functional web experiences and continuously improving my development skills.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✨ Portfolio Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 🏠 Modern and responsive homepage
+- 👩‍💻 About Me section
+- 🛠️ Skills and technologies showcase
+- 🚀 Featured projects
+- 📱 Fully responsive design
+- 📩 Contact section
+- 🎨 Clean and modern UI
+- ⚡ Fast performance with Next.js
+- 🔗 Social media and GitHub links
+- 📱 Mobile, tablet, and desktop support
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- Next.js
+- React
+- JavaScript
+- HTML5
+- CSS3
+- Tailwind CSS
+
+### Tools
+
+- Git
+- GitHub
+- VS Code
+- Vercel
+
+---
+
+## 📁 Project Structure
+
+```text
+my-portfolio-dev/
+├── app/
+├── components/
+├── public/
+├── package.json
+├── next.config.js
+└── README.md
