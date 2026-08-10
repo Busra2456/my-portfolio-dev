@@ -83,7 +83,7 @@ export default function Contact() {
                 <FaGithub className="duration-300 hover:text-cyan-400" />
               </a>
 
-              <a href="#">
+              <a href="https://www.linkedin.com/in/hasna-hena-busra-586a69428">
                 <FaLinkedin className="duration-300 hover:text-cyan-400" />
               </a>
 

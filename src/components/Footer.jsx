@@ -90,7 +90,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/hasna-hena-busra-586a69428"
                 className="duration-300 hover:text-cyan-400"
               >
                 <FaLinkedin />
