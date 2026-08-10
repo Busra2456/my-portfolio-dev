@@ -89,7 +89,7 @@ export default function Hero() {
   </a>
 
   <a
-    href="YOUR_LINKEDIN_URL"
+    href="https://www.linkedin.com/in/hasna-hena-busra-586a69428"
     target="_blank"
     rel="noopener noreferrer"
   >
