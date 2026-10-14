@@ -35,7 +35,7 @@ export default function About() {
             <h3 className="mb-5 text-3xl font-bold">Who am I?</h3>
 
             <p className="mb-5 leading-8 text-gray-400">
-              I'm <span className="font-semibold text-cyan-400">Busra</span>,
+              I'm <span className="font-semibold text-cyan-400">Hasna Hena Busra</span>,
               a web developer passionate about creating clean,
               accessible, and responsive digital experiences.
             </p>
