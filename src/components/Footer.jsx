@@ -1,3 +1,5 @@
+
+import Link from "next/link";
 import {
   FaGithub,
   FaLinkedin,
@@ -6,135 +8,111 @@ import {
   FaArrowUp,
 } from "react-icons/fa";
 
+const links = [
+  { title: "Home", href: "#home" },
+  { title: "About", href: "#about" },
+  { title: "Skills", href: "#skills" },
+  { title: "Projects", href: "#projects" },
+  { title: "Contact", href: "#contact" },
+];
+
 export default function Footer() {
   return (
-    <footer className="bg-[#050816] border-t border-cyan-500 text-white">
-
-      <div className="px-6 py-12 mx-auto max-w-7xl">
-
-        <div className="grid gap-10 md:grid-cols-3">
-
-          {/* Logo */}
-
+    <footer className="border-t border-cyan-500/30 bg-[#050816] text-white">
+      <div className="mx-auto max-w-7xl px-6 py-12">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           <div>
-            <h2 className="text-3xl font-bold text-cyan-400">
-              Busra
-            </h2>
+            <Link
+              href="#home"
+              className="text-3xl font-bold text-cyan-400"
+            >
+              Busra.
+            </Link>
 
-            <p className="mt-4 leading-7 text-gray-400">
-              Passionate Full Stack Developer building modern,
-              responsive and scalable web applications.
+            <p className="mt-4 max-w-sm leading-7 text-gray-400">
+              Full Stack Developer passionate about building modern,
+              responsive, and useful web applications.
             </p>
           </div>
 
-          {/* Quick Links */}
-
           <div>
+            <h3 className="mb-4 text-xl font-semibold">Quick Links</h3>
 
-            <h3 className="mb-4 text-xl font-semibold">
-              Quick Links
-            </h3>
-
-            <ul className="space-y-3 text-gray-400">
-
-              <li>
-                <a href="#home" className="hover:text-cyan-400">
-                  Home
-                </a>
-              </li>
-
-              <li>
-                <a href="#about" className="hover:text-cyan-400">
-                  About
-                </a>
-              </li>
-
-              <li>
-                <a href="#skills" className="hover:text-cyan-400">
-                  Skills
-                </a>
-              </li>
-
-              <li>
-                <a href="#projects" className="hover:text-cyan-400">
-                  Projects
-                </a>
-              </li>
-
-              <li>
-                <a href="#contact" className="hover:text-cyan-400">
-                  Contact
-                </a>
-              </li>
-
+            <ul className="space-y-3">
+              {links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 transition hover:text-cyan-400"
+                  >
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
-
           </div>
 
-          {/* Social */}
-
           <div>
-
             <h3 className="mb-4 text-xl font-semibold">
               Connect With Me
             </h3>
 
             <div className="flex gap-5 text-2xl">
-
               <a
                 href="https://github.com/Busra2456"
                 target="_blank"
-                className="duration-300 hover:text-cyan-400"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="transition hover:text-cyan-400"
               >
                 <FaGithub />
               </a>
 
               <a
                 href="https://www.linkedin.com/in/hasna-hena-busra-586a69428"
-                className="duration-300 hover:text-cyan-400"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="transition hover:text-cyan-400"
               >
                 <FaLinkedin />
               </a>
 
               <a
-                href="#"
-                className="duration-300 hover:text-cyan-400"
+                href="https://www.facebook.com/profile.php?id=61560069376204"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="transition hover:text-cyan-400"
               >
                 <FaFacebook />
               </a>
 
               <a
-                href="mailto:your@email.com"
-                className="duration-300 hover:text-cyan-400"
+                href="mailto:maisaraisathuya@gmail.com"
+                aria-label="Email"
+                className="transition hover:text-cyan-400"
               >
                 <FaEnvelope />
               </a>
-
             </div>
-
           </div>
-
         </div>
 
-        {/* Bottom */}
-
-        <div className="flex flex-col items-center justify-between gap-4 pt-6 mt-10 border-t border-gray-700 md:flex-row">
-
-          <p className="text-center text-gray-400">
-            © {new Date().getFullYear()} Busra. All Rights Reserved.
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
+          <p className="text-center text-sm text-gray-400">
+            © {new Date().getFullYear()} Hasna Hena Busra. All Rights Reserved.
           </p>
 
           <a
             href="#home"
-            className="p-3 duration-300 rounded-full bg-cyan-500 hover:bg-cyan-600"
+            aria-label="Back to top"
+            className="rounded-full bg-cyan-500 p-3 text-[#050816] transition hover:bg-cyan-400"
           >
             <FaArrowUp />
           </a>
-
         </div>
-
       </div>
-
     </footer>
   );
 }

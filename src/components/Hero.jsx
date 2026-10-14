@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -10,142 +11,140 @@ import {
   FaArrowDown,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="Home" className="relative overflow-hidden min-h-screen bg-[#050816] text-white flex items-center"
+    <section
+      id="home"
+      className="relative flex min-h-screen scroll-mt-20 items-center overflow-hidden bg-[#050816] px-6 pb-16 pt-28 text-white"
     >
-   
+      <div className="pointer-events-none absolute -left-32 top-20 h-96 w-96 rounded-full bg-cyan-500/20 blur-[150px]" />
+      <div className="pointer-events-none absolute -right-32 bottom-10 h-96 w-96 rounded-full bg-purple-600/20 blur-[150px]" />
 
-      <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-500/20 blur-[180px] rounded-full"></div>
+      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-2">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <p className="mb-4 text-xl font-medium text-cyan-400">
+            Hello, I'm
+          </p>
 
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-600/20 blur-[180px] rounded-full"></div>
+          <h1 className="mb-5 text-5xl font-extrabold md:text-7xl">
+            Hasna Hena Busra
+          </h1>
 
-      <div className="w-full px-6 py-24 mx-auto max-w-7xl">
+          <h2 className="mb-6 text-2xl font-bold text-cyan-400 md:text-4xl">
+            <Typewriter
+              words={[
+                "Full Stack Developer",
+                "Frontend Developer",
+                "Backend Developer",
+                "Next.js Developer",
+              ]}
+              loop={0}
+              cursor
+              cursorStyle="|"
+              typeSpeed={65}
+              deleteSpeed={40}
+              delaySpeed={1200}
+            />
+          </h2>
 
-        <div className="grid items-center gap-16 lg:grid-cols-2">
+          <p className="mb-9 max-w-xl text-lg leading-8 text-gray-400">
+            I enjoy building modern, responsive, and user-friendly
+            web applications. I work with React, Next.js, Node.js,
+            Express.js, Prisma, and PostgreSQL to turn ideas into
+            practical digital experiences.
+          </p>
 
-          
+          <div className="mb-10 flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              className="rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 px-7 py-3 font-semibold transition hover:scale-105"
+            >
+              View Projects
+            </a>
 
-          <motion.div
-            initial={{ opacity: 0, x: -80 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-          >
-            <p className="mb-4 text-xl font-medium text-cyan-400">
-               Hello, I'm
-            </p>
+            <a
+              href="/resume.pdf"
+              download="Hasna-Hena-Busra-Resume.pdf"
+              className="rounded-xl border border-cyan-400 px-7 py-3 font-semibold transition hover:bg-cyan-500 hover:text-[#050816]"
+            >
+              Download Resume
+            </a>
+          </div>
 
-            <h1 className="mb-5 text-5xl font-extrabold md:text-7xl">
-              Busra
-            </h1>
+          <div className="flex items-center gap-6 text-3xl">
+            <a
+              href="https://github.com/Busra2456"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="transition hover:scale-125 hover:text-cyan-400"
+            >
+              <FaGithub />
+            </a>
 
-            <h2 className="mb-6 text-2xl font-bold md:text-4xl text-cyan-400">
-              <Typewriter
-                words={[
-                  "Full Stack Developer",
-                  "Next.js Developer",
-                  "Backend Developer",
-                  "React Developer",
-                ]}
-                loop={0}
-                cursor
-                cursorStyle="|"
-                typeSpeed={90}
-                deleteSpeed={60}
-                delaySpeed={1500}
-              />
-            </h2>
+            <a
+              href="https://www.linkedin.com/in/hasna-hena-busra-586a69428"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="transition hover:scale-125 hover:text-cyan-400"
+            >
+              <FaLinkedin />
+            </a>
 
-            <p className="max-w-xl mb-10 text-lg leading-8 text-gray-400">
-              Passionate Full Stack Developer with experience in React,
-              Next.js, Node.js, Express.js, Prisma and PostgreSQL.
-              I enjoy building clean, scalable and modern web applications.
-            </p>
+            <a
+              href="https://www.facebook.com/profile.php?id=61560069376204"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="transition hover:scale-125 hover:text-cyan-400"
+            >
+              <FaFacebook />
+            </a>
 
-          
+            <a
+              href="mailto:maisaraisathuya@gmail.com"
+              aria-label="Email"
+              className="transition hover:scale-125 hover:text-cyan-400"
+            >
+              <HiOutlineMail />
+            </a>
+          </div>
+        </motion.div>
 
-            <div className="flex flex-wrap gap-5 mb-10">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="flex justify-center"
+        >
+          <div className="relative">
+            <div className="absolute inset-0 rounded-full bg-cyan-400/40 blur-3xl" />
 
-              <button className="py-3 font-semibold duration-300 bg-gradient-to-r from-cyan-500 to-blue-600 px-7 rounded-xl hover:scale-105">
-                View Projects
-              </button>
-
-              <button className="py-3 font-semibold duration-300 border border-cyan-500 px-7 rounded-xl hover:bg-cyan-500 hover:scale-105">
-                Download Resume
-              </button>
-
-            </div>
-
-           
-          <div className="flex gap-6 text-3xl">
-  <a
-    href="https://github.com/Busra2456"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <FaGithub className="duration-300 hover:text-cyan-400 hover:scale-125" />
-  </a>
-
-  <a
-    href="https://www.linkedin.com/in/hasna-hena-busra-586a69428"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <FaLinkedin className="duration-300 hover:text-cyan-400 hover:scale-125" />
-  </a>
-
-  <a
-    href="https://www.facebook.com/profile.php?id=61560069376204"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <FaFacebook className="duration-300 hover:text-cyan-400 hover:scale-125" />
-  </a>
-
-  <a href="mailto:maisaraisa938@gmail.com">
-    <HiOutlineMail className="duration-300 hover:text-cyan-400 hover:scale-125" />
-  </a>
-</div>
-
-          </motion.div>
-
-         
-
-          <motion.div
-            className="flex justify-center"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <div className="relative">
-
-              <div className="absolute inset-0 rounded-full bg-cyan-400 blur-3xl opacity-40 animate-pulse"></div>
-
-              <Image
-                src="/images/profiles.jpg"
-                alt="Busra"
-                width={420}
-                height={420}
-                className="relative rounded-full border-8 border-cyan-400 object-cover w-80 h-80 md:w-[350px] md:h-[350px]"
-              />
-
-            </div>
-
-          </motion.div>
-
-        </div>
-
+            <Image
+              src="/images/profiles.jpg"
+              alt="Hasna Hena Busra - Full Stack Developer"
+              width={420}
+              height={420}
+              priority
+              className="relative h-72 w-72 rounded-full border-4 border-cyan-400 object-cover shadow-2xl shadow-cyan-500/20 sm:h-80 sm:w-80 md:h-[380px] md:w-[380px]"
+            />
+          </div>
+        </motion.div>
       </div>
 
-<Link href="#About">
-  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 p-3 rounded-full border border-cyan-400 text-cyan-400 text-3xl cursor-pointer transition-all duration-300 hover:bg-cyan-400 hover:text-[#050816] hover:scale-110 animate-bounce"
->
-    <FaArrowDown />
-  </div>
-</Link>
-    
+      <a
+        href="#about"
+        aria-label="Scroll to About section"
+        className="absolute bottom-5 left-1/2 -translate-x-1/2 animate-bounce rounded-full border border-cyan-400 p-3 text-2xl text-cyan-400 transition hover:bg-cyan-400 hover:text-[#050816]"
+      >
+        <FaArrowDown />
+      </a>
     </section>
   );
 }

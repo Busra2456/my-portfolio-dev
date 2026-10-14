@@ -1,160 +1,62 @@
+
 "use client";
 
 import { motion } from "framer-motion";
 
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaGithub,
-  FaCode,
-  FaFigma,
-} from "react-icons/fa";
-
-import {
-  SiTailwindcss,
-  SiNextdotjs,
-  SiExpress,
-  SiPostgresql,
-  SiPrisma,
-  SiMongodb,
-  SiPostman,
-
-} from "react-icons/si";
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Tailwind CSS",
+  "Node.js",
+  "Express.js",
+  "Prisma ORM",
+  "PostgreSQL",
+  "MongoDB",
+  "Git",
+  "GitHub",
+  "REST API",
+];
 
 export default function Skills() {
-  const frontend = [
-    {
-      name: "HTML5",
-      icon: <FaHtml5 className="text-5xl text-orange-500" />,
-    },
-    {
-      name: "CSS3",
-      icon: <FaCss3Alt className="text-5xl text-blue-500" />,
-    },
-    {
-      name: "JavaScript",
-      icon: <FaJs className="text-5xl text-yellow-400" />,
-    },
-    {
-      name: "React",
-      icon: <FaReact className="text-5xl text-cyan-400" />,
-    },
-    {
-      name: "Next.js",
-      icon: <SiNextdotjs className="text-5xl" />,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: <SiTailwindcss className="text-5xl text-cyan-400" />,
-    },
-     {
-    name: "Figma",
-    icon: <FaFigma className="text-5xl text-pink-500" />,
-  },
-  {
-    name: "DaisyUI",
-    icon: <SiTailwindcss className="text-5xl text-cyan-400" />,
-  }
-  ];
-
-  const backend = [
-    {
-      name: "Node.js",
-      icon: <FaNodeJs className="text-5xl text-green-500" />,
-    },
-    {
-      name: "Express.js",
-      icon: <SiExpress className="text-5xl" />,
-    },
-    {
-      name: "Prisma",
-      icon: <SiPrisma className="text-5xl" />,
-    },
-    {
-      name: "PostgreSQL",
-      icon: <SiPostgresql className="text-5xl text-blue-500" />,
-    },
-    {
-      name: "MongoDB",
-      icon: <SiMongodb className="text-5xl text-green-500" />,
-    },
-  ];
-
-  const tools = [
-    {
-      name: "Git",
-      icon: <FaGitAlt className="text-5xl text-orange-500" />,
-    },
-    {
-      name: "GitHub",
-      icon: <FaGithub className="text-5xl" />,
-    },
-    {
-      name: "Postman",
-      icon: <SiPostman className="text-5xl text-orange-500" />,
-    },
-    {
-      name: "VS Code",
-      icon: <FaCode className="text-5xl text-blue-500" />,
-    },
-  ];
-
-  const SkillCard = ({ title, data }) => (
-    <div>
-      <h3 className="mb-8 text-3xl font-bold text-cyan-400">{title}</h3>
-
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
-        {data.map((skill, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.08 }}
-            className="bg-[#111827] border border-cyan-500 rounded-2xl p-6 flex flex-col items-center gap-4 hover:shadow-[0_0_20px_#06b6d4] duration-300"
-          >
-            {skill.icon}
-
-            <h4 className="font-semibold">{skill.name}</h4>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  );
-
   return (
     <section
-      id="Skills"
-      className="bg-[#050816] text-white py-24 px-6"
+      id="skills"
+      className="scroll-mt-20 bg-[#050816] px-6 py-24 text-white"
     >
-      <div className="mx-auto max-w-7xl ">
-
+      <div className="mx-auto max-w-7xl">
         <motion.div
-          initial={{ opacity: 0, y: 80 }}
+          initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .8 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-5xl font-bold text-center">
+          <h2 className="mb-4 text-center text-4xl font-bold md:text-5xl">
             My <span className="text-cyan-400">Skills</span>
           </h2>
 
-          <p className="mt-4 mb-20 text-center text-gray-400">
-            Technologies and tools I use for building modern web applications.
+          <p className="mb-14 text-center text-gray-400">
+            Technologies and tools I use to build web applications.
           </p>
         </motion.div>
 
-        <div className="mx-6 space-y-16 text-center">
-
-          <SkillCard title="Frontend" data={frontend} />
-
-          <SkillCard title="Backend" data={backend} />
-
-          <SkillCard title="Tools" data={tools} />
-
+        <div className="flex flex-wrap justify-center gap-4">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={skill}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.03 }}
+              viewport={{ once: true }}
+              className="rounded-xl border border-cyan-500/30 bg-[#111827] px-6 py-4 font-medium text-cyan-300 transition hover:-translate-y-1 hover:border-cyan-400 hover:bg-cyan-500/10"
+            >
+              {skill}
+            </motion.div>
+          ))}
         </div>
-
       </div>
     </section>
   );

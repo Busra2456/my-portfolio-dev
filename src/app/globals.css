@@ -4,3 +4,48 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  background: #050816;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: #06b6d4;
+  color: #050816;
+}
+
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+img {
+  max-width: 100%;
+}

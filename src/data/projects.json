@@ -1,24 +1,26 @@
+
 [
   {
     "id": 1,
-    "title": "Prisma Press Backend",
+    "title": "Daan - Donate with Trust",
     "image": "/images/project1.jpg",
-    "description": "A REST API built with Node.js, Express.js, Prisma ORM, PostgreSQL, JWT Authentication, and Role-Based Authorization for managing blogs and users.",
+    "description": "A donation platform concept connecting donors with people in need through verified requests, user authentication, and role-based access.",
     "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
       "Node.js",
-      "Express.js",
       "Prisma",
-      "PostgreSQL",
-      "JWT"
+      "PostgreSQL"
     ],
-    "github": "https://github.com/Busra2456/prisma-press-backend",
-    "live": "#"
+    "github": "https://github.com/Busra2456",
+    "live": "https://daan-frontend.vercel.app"
   },
   {
     "id": 2,
     "title": "Pet Haven",
     "image": "/images/project2.png",
-    "description": "A full-stack pet adoption platform with user authentication, pet management, responsive design, and Firebase deployment.",
+    "description": "A pet adoption platform with pet listings, user authentication, and a responsive interface.",
     "technologies": [
       "React",
       "Node.js",
@@ -31,16 +33,17 @@
   },
   {
     "id": 3,
-    "title": "Portfolio Website",
+    "title": "Prisma Press Backend",
     "image": "/images/project3.jpg",
-    "description": "A modern and responsive personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion to showcase my skills and projects.",
+    "description": "A REST API project demonstrating backend development, authentication, database integration, and role-based authorization.",
     "technologies": [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "Framer Motion"
+      "Node.js",
+      "Express.js",
+      "Prisma",
+      "PostgreSQL",
+      "JWT"
     ],
-    "github": "https://github.com/Busra2456/my-portfolio-dev",
-    "live": "#"
+    "github": "https://github.com/Busra2456/prisma-press-backend",
+    "live": ""
   }
 ]
